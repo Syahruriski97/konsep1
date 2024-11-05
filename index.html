@@ -28,7 +28,6 @@
             background-color: #186497; 
         }
 
-       
         @keyframes bounce {
             0%, 100% {
                 transform: translateX(0); 
@@ -42,6 +41,27 @@
             75% {
                 transform: translateX(5px); 
             }
+        }
+
+        .prize-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .prize-list li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .prize-list i {
+            margin-right: 10px;
+            color: #5c6bc0; /* Flower Blue color */
+        }
+
+        .cabor-list i {
+            margin-right: 10px;
+            color: #5c6bc0; /* Flower Blue color */
         }
     </style>
 </head>
@@ -64,7 +84,7 @@
             <div class="articles">
                 <article>
                     <h2>Selamat Datang!</h2>
-                    <p>formulir pendaftaran para peserta di berbagai cabang lomba olahraga. Daftarkan dirimu sekarang dan ikuti serunya lombanya!</p>
+                    <p>Formulir pendaftaran para peserta di berbagai cabang lomba olahraga. Daftarkan dirimu sekarang dan ikuti serunya lombanya!</p>
                     <a href="form.html" class="btn">Daftar Sekarang</a>
                 </article>
 
@@ -72,19 +92,25 @@
                     <h2>Informasi Lomba</h2>
                     <p>Lomba ini terbuka untuk semua kalangan, baik pelajar, Mahasiswa maupun profesional. Ikuti lomba ini dan raih kemenangan serta hadiah menarik!</p>
                 </article>
+
                 <article>
                     <h2>Cabor Perlombaan</h2>
-                    <p>Futsal</p>
-                    <p>Tenis Meja</p>
-                    <p>Badminton</p>
-                    <p>Sepak Bola</p>
+                    <ul class="cabor-list">
+                        <li><i class="fas fa-futbol"></i> Futsal</li>
+                        <li><i class="fas fa-table-tennis"></i> Tenis Meja</li>
+                        <li><i class="fas fa-badminton"></i> Badminton</li>
+                        <li><i class="fas fa-futbol"></i> Sepak Bola</li>
+                    </ul>
                 </article>
+
                 <article>
                     <h2>Hadiah Menarik</h2>
-                    <p>Juara 1 = Rp.10.000.000 + Mendali + Sertifikat</p>
-                    <p>Juara 2 = Rp.8.000.000 + Mendali + Serifikat</p>
-                    <p>Juara 3 = Rp.5.000.000 + Mendali + Serifikat</p>
-                    <p>Juara 4,5,6 Masing-Masing Mendapatkan Uang Tunai Rp.1.000.000 + Serifikat</p>
+                    <ul class="prize-list">
+                        <li><i class="fas fa-medal"></i> Juara 1 = Rp.10.000.000 + Medali + Sertifikat</li>
+                        <li><i class="fas fa-medal"></i> Juara 2 = Rp.8.000.000 + Medali + Sertifikat</li>
+                        <li><i class="fas fa-medal"></i> Juara 3 = Rp.5.000.000 + Medali + Sertifikat</li>
+                        <li><i class="fas fa-money-bill-wave"></i> Juara 4, 5, 6 Masing-Masing Mendapatkan Uang Tunai Rp.1.000.000 + Sertifikat</li>
+                    </ul>
                 </article>
             </div>
 
