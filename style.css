@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: Roboto, sans-serif;
+}
+
+header, footer {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header .lead {
+    font-size: 1.1em;
+}
+
+/* Tata Letak Flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #222;
+}
+
+nav {
+    padding: 10px;
+    background-color: #444;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav p {
+    margin: 0;
+}
+
+nav a {
+    color: #6495ED;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.articles {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+aside {
+    flex: 1;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+aside img {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6495ED;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #4169E1;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: #222;
+    text-align: center;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
