@@ -12,7 +12,7 @@
             width: 100%;
             padding: 20px;
             text-align: center;
-            background-color: #007bff;
+            background-color: #143a53; 
             color: white;
             font-size: 24px;
             font-weight: bold;
@@ -21,10 +21,27 @@
             text-decoration: none;
             margin-top: 20px;
             cursor: pointer;
+            animation: bounce 2s infinite;
         }
 
         .btn-daftar:hover {
-            background-color: #0056b3;
+            background-color: #186497; 
+        }
+
+       
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(0); 
+            }
+            25% {
+                transform: translateX(10px); 
+            }
+            50% {
+                transform: translateX(-10px); 
+            }
+            75% {
+                transform: translateX(5px); 
+            }
         }
     </style>
 </head>
@@ -87,4 +104,3 @@
 
 </body>
 </html>
-
